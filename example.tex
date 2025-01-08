@@ -1,0 +1,31 @@
+\documentclass[a4paper,14pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1,T2A]{fontenc} 
+\usepackage{graphicx}
+\usepackage{caption}
+
+\graphicspath{{images/}} 
+\captionsetup[figure]{name=Рисунок} 
+
+\begin{document}
+	
+\chapter{Заголовок}
+\section{Introduction}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{test.jpg}
+	\caption{Тест}
+	\label{fig:test1}
+\end{figure}
+
+Какой-то текст. рисунок \ref{fig:test1}
+
+\begin{equation}
+	\rho(x,x')=\sqrt{\sum_{i}^{n}(x_i-x_i')^2}
+\end{equation}
+
+
+	
+\end{document}
